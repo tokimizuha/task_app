@@ -38,7 +38,7 @@ m = Module.new do
   end
 
   def gemfile
-    gemfile = ENV["BUNDLE_GEMFILE"]
+      gemfile = ENV["BUNDLE_GEMFILE"]
     return gemfile if gemfile && !gemfile.empty?
 
     File.expand_path("../Gemfile", __dir__)
@@ -76,7 +76,7 @@ m = Module.new do
     return requirement unless Gem.rubygems_version < Gem::Version.new("2.7.0")
 
     requirement += ".a" if bundler_gem_version.prerelease?
-
+    
     requirement
   end
 

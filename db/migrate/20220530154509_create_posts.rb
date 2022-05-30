@@ -1,4 +1,4 @@
-class CreatePosts < ActiveRecord::Migration[5.0]
+class CreatePosts < ActiveRecord::Migration[5.2]
   def change
     create_table :posts do |t|
       t.string :title
@@ -6,7 +6,7 @@ class CreatePosts < ActiveRecord::Migration[5.0]
       t.integer :endDay
       t.string :allDay
       t.string :memo
-
+      
       t.timestamps
     end
   end

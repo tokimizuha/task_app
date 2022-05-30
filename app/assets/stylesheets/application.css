@@ -14,7 +14,7 @@
  *= require_self
  */
 header {
-  background-color:#005FFF;
+  background-color:#dc143c;
   color:white;
   height:150px;
   }
@@ -24,7 +24,7 @@ padding-top:50px
 }  
 
 footer {
-  background-color:#005FFF;
+  background-color:#dc143c;
   color:white;
   height:100px;
 }
